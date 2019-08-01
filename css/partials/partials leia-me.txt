@@ -1,0 +1,22 @@
+Stylesheets/
+|
+|-- modules/
+|   ...
+|
+|-- partials/             # Partials
+|   |-- _base.sass        # Import todos os mixins e variáveis
+|   |-- _buttons.scss     # Cadastro de todos os botões
+|   |-- _figures.scss     # Ícones, imagens e arquivos svg
+|   |-- _grids.scss       # Grid do projeto, colunas e estruturas de container
+|   |-- _typography.scss  # Tipografia em geral
+|   |-- _reset.scss       # Reset do css
+|   ...
+|
+|-- vendor/
+|   ...
+|
+`-- main.scss
+ 
+// PARTIALS //
+
+O arquivo partials abriga todo o visual dos componentes, seja uma tabulação, carousel, estilo de formulários, botões, grids e tipografias.

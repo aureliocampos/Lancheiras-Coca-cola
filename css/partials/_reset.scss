@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol, ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+button.lanc-modal-close.close{
+  font-family: 'tccc_unityregular';
+  font-size: 0.8rem;
+  color: $c-white;
+  text-transform: uppercase;
+  background: $c-yellow;
+  padding: 8px 12px;
+  border-radius: 100px;
+  opacity: 1;
+  font-weight: lighter;
+  outline: none;
+  &:focus {
+    color: $c-white;
+    background: $c-yellow;
+  }
+  &:hover {
+    color: $c-white;
+    background: $c-yellow;
+  }
+}
+.modal-dialog {
+  max-width: 100%;
+  margin: 0 auto;
+  @include desktop {
+    max-width: 100%;
+  }
+  @include notebook {
+    max-width: 100%;
+  }
+  @include tablet {
+    max-width: 100%;
+  }
+  @include smartmobile {
+    max-width: 100%;
+  }
+  @include mobile {
+    max-width: 100%;
+  }
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.lanc-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/**
+* Trecho de código responsável pelo estilo dá navegação do carousel.
+ */
+.owl-theme {
+  .owl-dots {
+    .owl-dot {
+      &:hover {
+        span {
+          background: $c-green;
+        }
+      }
+      span {
+        background: $c-yellow;
+        &:hover {
+          background: $c-green;
+        }
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .owl-dot.active {
+      span {
+        background: $c-green;
+      }
+    }
+  }
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 30px;
+}
+@media (min-width: 576px) {
+  .lanc-container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .lanc-container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .lanc-container {
+    width: 950px;
+    max-width: 100%;
+  }
+}

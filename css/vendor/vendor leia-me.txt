@@ -1,0 +1,17 @@
+stylesheets/
+|
+|-- modules/              # Modulos comuns
+|   ...
+|
+|-- partials/             # Partials
+|   ...
+|
+|-- vendor/               # CSS ou Sass de projetos/bibliotecas de terceiros (bootstrap, jquery...)
+|   |-- _colorpicker.scss (exemplo)
+|   |-- _bootstrap.css (exemplo)
+|   ...
+ 
+// VENDOR //
+
+O arquivo vendor é responsável por abrigar todas as bibliotecas externas de outros lugares. Não necessariamente precisam estar em SASS ou SCSS. Não devem receber import de nenhum outro arquivo do projeto e não podem ser alteradas.
+

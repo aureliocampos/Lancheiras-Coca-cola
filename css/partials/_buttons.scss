@@ -1,0 +1,169 @@
+@mixin btn {
+  @include flex($align-item:center, $justify-content:center);
+  padding: 0;
+  height: 50px;
+  line-height: 1.2;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  font-family: 'open_sansbold', sans-serif;
+  @include user-select(none);
+  @include touch-action(manipulation);
+  &:hover {
+	text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+.mjv-btn {
+ @include btn();
+}
+
+/* header */
+.lanc-banner-link {
+  border: 1px solid $c-yellow;
+  padding: 20px 45px;
+  border-radius: 100px;
+  font-family: 'tccc_unityregular';
+  font-size: 1.4rem;
+  color: $c-yellow;
+  &:hover {
+    background-color: $c-yellow;
+    color:$c-white;
+    transition: 400ms;
+  }
+  &:focus {
+    background-color: $c-yellow;
+    color:$c-white;
+    outline: none;
+  }
+  @include notebook {
+    padding: 15px 35px;
+    font-size: 1rem;
+  }
+  @include tablet {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  @include smartmobile {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  @include mobile {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.lanc-modal-close {
+  font-family: 'tccc_unityregular';
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #FFD400;
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+
+.lanc-newsletter-cta {
+  width: 150px;
+  height: 55px;
+  font-family: 'tccc_unityregular';
+  font-size: 1.1rem;
+  color: $c-white;
+  background-color: $c-yellow;
+  margin-left: 20px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    width: 60%;
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+  }
+  @include mobile {
+    width: 60%;
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+  }
+}
+
+.lanc-mainNav-link {
+  font-family: 'tccc_unitybold';
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $c-yellow;
+  position: relative;
+  &:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -5;
+    left: 0;
+    background-color: $c-yellow;
+    transition: width .4s;
+  }
+  &:hover {
+    color: $c-orange;
+    &:after {
+      display: block;
+      content: '';
+      width: 200px;
+      height: 4px;
+      position: absolute;
+      bottom: -5;
+      left: 0;
+      background-color: $c-orange;
+      //transition: width .3s;
+    }
+  }
+  @include notebook {
+  }
+  @include tablet {
+  }
+  @include smartmobile {
+    font-size: 0.8rem;
+    &:hover {
+      color: $c-orange;
+      &:after {
+        display: block;
+        content: '';
+        width: 80px;
+        height: 4px;
+        position: absolute;
+        bottom: -5;
+        left: 0;
+        background-color: $c-orange;
+        //transition: width .3s;
+      }
+    }
+  }
+  @include mobile {
+    font-size: 0.8rem;
+    &:hover {
+      color: $c-orange;
+      &:after {
+        display: block;
+        content: '';
+        width: 80px;
+        height: 4px;
+        position: absolute;
+        bottom: -5;
+        left: 0;
+        background-color: $c-orange;
+        //transition: width .3s;
+      }
+    }
+  }
+}

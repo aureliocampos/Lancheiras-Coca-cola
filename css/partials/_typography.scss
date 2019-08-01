@@ -1,0 +1,128 @@
+@import url('../main.scss');
+
+@font-face {
+  font-family: 'tccc_unityregular';
+  src: url('../font/TCCC-UnityText-Regular.eot');
+  src: local('../font/TCCC-UnityText Regular'), local('TCCC-UnityText-Regular'),
+  url('../font/TCCC-UnityText-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/TCCC-UnityText-Regular.woff2') format('woff2'),
+  url('../font/TCCC-UnityText-Regular.woff') format('woff'),
+  url('../font/TCCC-UnityText-Regular.svg#TCCC-UnityText-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tccc_unitybold';
+  src: url('../font/TCCC-UnityText-Bold.eot');
+  src: local('../font/TCCC-UnityText Bold'), local('TCCC-UnityText-Bold'),
+  url('../font/TCCC-UnityText-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/TCCC-UnityText-Bold.woff2') format('woff2'),
+  url('../font/TCCC-UnityText-Bold.woff') format('woff'),
+  url('../font/TCCC-UnityText-Bold.svg#TCCC-UnityText-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lanc-header-textA {
+  font-family: 'tccc_unitybold';
+  font-size: 1.5rem;
+  color: $c-green;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    font-size: 0.7rem;
+    padding-right: 15px;
+  }
+  @include mobile {
+    font-size: 0.7rem;
+    padding-right: 15px;
+  }
+}
+.lanc-header-textB {
+  font-family: 'tccc_unityregular';
+  font-size: 2rem;
+  color: $c-green;
+  line-height: 1.4;
+  text-transform: uppercase;
+  @include notebook {}
+  @include tablet {
+    font-size: 1.5rem;
+  }
+  @include smartmobile {
+    font-size: 0.6rem;
+  }
+  @include mobile {
+    font-size: 0.6rem;
+  }
+}
+.lanc-options-textA {
+  font-family: 'tccc_unityregular';
+  font-size: 1.5rem;
+  color: $c-gray;
+}
+.lanc-options-textB {
+  font-family: 'tccc_unityregular';
+  font-size: 2.2em;
+  color: $c-green;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.lanc-options-textC {
+  font-family: 'tccc_unityregular';
+  font-size: 1rem;
+  color: $c-gray;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+.lanc-small-textA {
+  font-family: 'tccc_unityregular';
+  font-size: 0.9rem;
+  color: $c-gray;
+}
+.lanc-modal-titleA {
+  font-family: 'tccc_unitybold';
+  font-size: 2rem;
+  color: $c-green;
+  text-transform: uppercase;
+}
+.lanc-modal-subtitle{
+  font-family: 'tccc_unityregular';
+  font-size: 1rem;
+  color: orange;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.lanc-modal-titleB {
+  font-family: 'tccc_unityregular';
+  font-size: 1.3rem;
+  color: $c-green;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.lanc-modalList-num {
+  font-family: 'tccc_unityregular';
+  font-size: 0.8rem;
+  color: $c-orange;
+  margin-right: 10px;
+}
+.lanc-modalListA-item {
+  font-family: 'tccc_unityregular';
+  font-size: 0.7rem;
+  color: $c-gray;
+  line-height: 1.6;
+}
+.lanc-modalListB-item {
+  font-family: 'tccc_unityregular';
+  font-size: 0.7rem;
+  color: $c-gray;
+  margin: 5px 0;
+  @include desktop {}
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    margin: 15px 0;
+  }
+  @include mobile {
+    margin: 15px 0;
+  }
+}

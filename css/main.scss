@@ -1,0 +1,699 @@
+@import 'modules';
+@import 'partials';
+
+#lanc-header {
+  background: url("../img/banner-full.jpg") no-repeat center center ;
+  background-size: cover;
+  height: 1320px;
+  @include notebook {
+    height: 920px;
+  }
+  @include tablet {
+    width: 100%;
+    height: 750px;
+  }
+  @include smartmobile {
+    width: 100%;
+    height: 620px;
+  }
+  @include mobile {
+    width: 100%;
+    height: 620px;
+  }
+  .lanc-banner-container {
+    .lanc-banner-content {
+      @include flex($justify-content:center, $align-item: center, $flex-direction: column);
+      @include notebook {}
+      @include tablet {
+        padding: 0 15px;
+      }
+      @include smartmobile {
+        padding: 0 15px;
+      }
+      @include mobile {
+        padding: 0 15px;
+      }
+      .lanc-logo {
+        @include flex($justify-content:center, $align-item: center, $flex-direction: column);
+        width: 40%;
+        margin-top: 100px;
+        @include notebook {
+          margin-top: 50px;
+        }
+        @include tablet {
+          width: 50%;
+          margin-top: 60px;
+        }
+        @include smartmobile {
+          width: 60%;
+          margin-top: 30px;
+        }
+        @include mobile {
+          width: 60%;
+          margin-top: 30px;
+        }
+        .lanc-logo-img {
+
+        }
+      }
+      .lanc-banner-description {
+        width: 40%;
+        margin-top: 100px;
+        font-family: 'tccc_unityregular';
+        font-size: 1.5rem;
+        color: $c-white;
+        text-align: center;
+        @include notebook {
+          margin-top: 50px;
+          font-size: 1.3rem;
+        }
+        @include tablet {
+          width: 50%;
+          margin-top: 30px;
+          font-size: 1rem;
+        }
+        @include smartmobile {
+          width: 100%;
+          margin-top: 30px;
+          font-size: 1rem;
+        }
+        @include mobile {
+          width: 100%;
+          margin-top: 30px;
+          font-size: 1rem;
+        }
+      }
+      .lanc-banner-items {
+        @include flex($justify-content:center);
+        margin-top: 100px;
+        @include notebook{
+          margin-top: 70px;
+        }
+        @include tablet {
+          margin-top: 50px;
+        }
+        @include smartmobile {
+          flex-direction: column;
+          margin-top: 30px;
+        }
+        @include mobile {
+          flex-direction: column;
+          margin-top: 30px;
+        }
+        .lanc-banner-item {
+          margin: 0 20px;
+          @include notebook {
+            margin: 0 10px;
+          }
+          @include tablet {
+            margin: 0 10px;
+          }
+          @include smartmobile {
+            margin: 20px auto;
+          }
+          @include mobile {
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+  }
+}
+.lanc-body-description {
+  @include flex($justify-content:flex-start, $align-item: flex-end);
+  height: 100px;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    height: 60px;
+  }
+  @include mobile {
+    height: 60px;
+  }
+  .lanc-description-image {
+    width: 200px;
+    margin-left: -10px;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      width: 30%;
+      margin-left: -5px;
+    }
+    @include mobile {
+      width: 30%;
+      margin-left: -5px;
+    }
+  }
+  .lanc-description-text {
+    margin-left: 30px;
+    width: 70%;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      margin-left: 20px;
+    }
+    @include mobile {
+      margin-left: 20px;
+    }
+  }
+}
+.lanc-main-nav {
+  @include flex($justify-content:flex-start, $align-item:center);
+  width: 950px;
+  height: auto;
+  margin-top: 50px;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  .lanc-mainNav-items {
+    @include flex($justify-content:flex-start, $align-item:center);
+    @include notebook {}
+    @include tablet {
+      width: 100%;
+      justify-content: space-between;
+    }
+    @include smartmobile {
+      width: 100%;
+      justify-content: space-between;
+    }
+    @include mobile {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .lanc-mainNav-item {
+      margin-right: 100px;
+      @include notebook {}
+      @include tablet {
+        margin: 0 auto;
+      }
+      @include smartmobile {
+        margin: 0 auto;
+      }
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
+    .lanc-mainNav-item.active {
+      .lanc-mainNav-link {
+        color: $c-orange;
+        &:after {
+          display: block;
+          content: '';
+          width: 200px;
+          height: 4px;
+          position: absolute;
+          bottom: -5;
+          left: 0;
+          background-color: $c-orange;
+          transition: width .4s;
+        }
+      }
+      @include notebook {}
+      @include tablet {}
+      @include smartmobile {
+        .lanc-mainNav-link {
+          color: $c-orange;
+          &:after {
+            display: block;
+            content: '';
+            width: 80px;
+            height: 4px;
+            position: absolute;
+            bottom: -5;
+            left: 0;
+            background-color: $c-orange;
+            transition: width .4s;
+          }
+        }
+      }
+      @include mobile {
+        .lanc-mainNav-link {
+          color: $c-orange;
+          &:after {
+            display: block;
+            content: '';
+            width: 80px;
+            height: 4px;
+            position: absolute;
+            bottom: -5;
+            left: 0;
+            background-color: $c-orange;
+            transition: width .4s;
+          }
+        }
+      }
+    }
+  }
+}
+.lanc-options-container {
+  .lanc-options-content {
+    .lanc-options-items {
+      &:first-of-type {
+        display: block;
+      }
+      &:nth-of-type(2) {
+        display: none;
+      }
+      &:last-of-type {
+        display: none;
+      }
+      .lanc-options-item {
+        margin-top: 50px;
+        &:first-of-type {
+          margin-top: 70px;
+        }
+        .lanc-optionsItem-container {
+          @include flex($justify-content:flex-start, $align-item: center);
+          .lanc-options-image {
+            width: 70px;
+            height: auto;
+          }
+          .lanc-options-description {
+            margin-left: 30px;
+            width: 90%;
+            .lanc-options-info {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.lanc-options-footer {
+  @include flex($justify-content:flex-start, $align-item:center);
+  margin-top: 20px;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .lanc-options-infoNutri {
+    font-family: 'tccc_unityregular';
+    font-size: 0.7rem;
+    color: $c-white;
+    text-transform: uppercase;
+    background-color: $c-yellow;
+    padding: 8px 20px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .lanc-options-tags {
+    @include flex($justify-content:flex-start, $align-item:center);
+    font-family: 'tccc_unityregular';
+    font-size: 0.7rem;
+    color: $c-gray;
+    margin-left: 30px;
+    i {
+      font-size: 1.5rem;
+      color: $c-orange;
+      margin-right: 10px;
+    }
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      margin: 15px auto 0 auto;
+      width: 100%;
+    }
+    @include mobile {
+      margin: 15px auto 0 auto;
+      width: 100%;
+    }
+  }
+}
+.lanc-newsletter-container {
+  margin-top: 80px;
+  .lanc-newsletter-content {
+    @include flex($justify-content:center, $align-item:center);
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+    .lanc-newsletter-item {
+      @include notebook {}
+      @include tablet {}
+      @include smartmobile {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      .lanc-newsletter-paragraph {
+        font-family: 'tccc_unityregular';
+        font-size: 1.6rem;
+        color: $c-orange;
+        text-align: center;
+        text-transform: uppercase;
+        @include notebook {}
+        @include tablet {}
+        @include smartmobile {
+          font-size: 1.1rem;
+        }
+        @include mobile {
+          font-size: 1.1rem;
+        }
+      }
+      .lanc-newsletter-form {
+        margin: 20px 0 0 170px;
+        @include notebook {}
+        @include tablet {}
+        @include smartmobile {
+          @include flex($justify-content:center, $align-item:center, $flex-direction:column);
+          margin: 20px auto 0 auto;
+        }
+        @include mobile {
+          @include flex($justify-content:center, $align-item:center, $flex-direction:column);
+          margin: 20px auto 0 auto;
+        }
+        .lanc-newsletter-input {
+          width: 500px;
+          height: 50px;
+          font-family: 'tccc_unityregular';
+          font-size: 1.1rem;
+          color: $c-black;
+          padding-left: 30px;
+          border-radius: 100px;
+          border: 1px solid $c-green;
+          outline: none;
+          &:focus {
+            outline: none;
+          }
+          @include notebook {}
+          @include tablet {}
+          @include smartmobile {
+            width: 100%;
+            font-size: 0.9rem;
+          }
+          @include mobile {
+            width: 100%;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+.lanc-footer-description {
+  @include flex($justify-content:flex-start, $align-item: center);
+  height: 150px;
+  margin-top: 50px;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+   height: 100px;
+  }
+  @include mobile {
+   height: 100px;
+
+  }
+  .lanc-description-image {
+    width: 200px;
+    margin-left: -10px;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      margin-left: -5px;
+    }
+    @include mobile {
+      margin-left: -5px;
+    }
+    &:last-of-type {
+      margin-left: 150px;
+      @include notebook {}
+      @include tablet {
+        margin:0 50px 0 30px;
+      }
+      @include smartmobile {
+        margin: 0 15px 0 0;
+      }
+      @include mobile {
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  .lanc-description-text {
+    margin-left: 30px;
+    width: 500px;
+    text-transform: uppercase;
+    @include notebook {}
+    @include tablet {
+      width: 350px;
+    }
+    @include smartmobile {
+      width: 100%;
+      margin: 0 10px;
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0 10px;
+    }
+  }
+}
+.lanc-carousel-container {
+  margin-top: 50px;
+  @include notebook {
+  }
+  @include tablet {
+  }
+  @include smartmobile {
+    margin-top: 20px;
+  }
+  @include mobile {
+    margin-top: 20px;
+  }
+  .lanc-carousel-content {
+    .lanc-carousel-items {
+      .lanc-carousel-item {
+        .lanc-corusel-video {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+#lanc-footer {
+  @include flex($justify-content:space-around, $align-item: center, $flex-direction:column);
+  margin-top: 80px;
+  height: 270px;
+  width: 100%;
+  background: url("../img/banner-footer.png") no-repeat top center ;
+  background-size: cover;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    margin-top: 100px;
+    height: 150px;
+  }
+  @include mobile {
+    margin-top: 100px;
+    height: 150px;
+  }
+  .lanc-logo-footer {
+    width: 350px;
+    @include notebook {}
+    @include tablet {
+      width: 200px;
+    }
+    @include smartmobile {
+      width: 50%;
+      margin-top: -70px;
+    }
+    @include mobile {
+      width: 50%;
+      margin-top: -70px;
+    }
+  }
+  .lanc-logo-coca-cola {
+    width: 150px;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      width: 100px;
+    }
+    @include mobile {
+      width: 100px;
+    }
+  }
+}
+.lanc-modal-container{
+  @include flex($justify-content:center, $align-item: center);
+  background-color: lightgreen;
+  height: 100vh;
+  width: 100%;
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    height: auto;
+    width: 100%;
+  }
+  @include mobile {
+    height: auto;
+    width: 100%;
+  }
+  .lanc-modal-content {
+    width: 90%;
+    height: auto;
+    background-color: $c-white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 1px $c-gray;
+    overflow: hidden;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      height: auto;
+      width: 100%;
+      padding: 0 10px;
+      overflow: auto;
+      border-radius: 0;
+    }
+    @include mobile {
+      height: auto;
+      width: 100%;
+      padding: 0 10px;
+      overflow: auto;
+      border-radius: 0;
+    }
+    .lanc-modal-header{
+      @include flex($justify-content:space-between, $align-item: center);
+      @include notebook {}
+      @include tablet {}
+      @include smartmobile {
+        height: 100px;
+      }
+      @include mobile {
+        height: 100px;
+      }
+    }
+  }
+  .lanc-modal-column {
+    width: 50%;
+    padding: 15px;
+    @include notebook {}
+    @include tablet {}
+    @include smartmobile {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+    }
+    @include mobile {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+    }
+    .lanc-modallistA-items {
+      margin-top: 20px;
+      .lanc-modalListA-item {
+        font-family: 'tccc_unityregular';
+        font-size: 0.9rem;
+        color: $c-gray;
+      }
+    }
+    .lanc-options-footer {
+      .lanc-options-tags {
+        margin:0 30px 0 0;
+      }
+    }
+  }
+}
+.lanc-modal-columns {
+  @include flex($justify-content:space-between);
+  @include notebook {}
+  @include tablet {}
+  @include smartmobile {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  @include mobile {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+}
+.lanc-modal-table {
+  margin-top: 10px;
+  .lanc-modalTable-header {
+    &:after {
+      display: block;
+      content: '';
+      width: auto;
+      height: 2px;
+      background-color: orange;
+      position: absolute;
+      @include desktop {
+        width: 830px;
+      }
+      @include notebook {
+       width: 570px;
+     }
+    }
+    .lanc-modalTable-row {
+      .lanc-modalTable-nameCol {
+        font-family: 'tccc_unityregular';
+        font-size: 0.8rem;
+        color: $c-green;
+        text-align: center;
+        padding-right: 10px;
+        width: max-content;
+        width: -moz-max-content;
+        line-height: 1.6;
+        vertical-align: bottom;
+        @include notebook {}
+        @include tablet {}
+        @include smartmobile {
+          font-size: 0.5rem;
+          padding-right: 5px;
+        }
+        @include mobile {
+          font-size: 0.5rem;
+          padding-right: 5px;
+        }
+        &:first-of-type {
+          width: 180px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.lanc-modalTable-body {
+  .lanc-modalTable-row {
+    .lanc-modalTable-rowItem {
+      font-family: 'tccc_unityregular';
+      font-size: 0.8rem;
+      color: $c-gray;
+      padding: 4px 0;
+      text-align: center;
+      @include notebook {}
+      @include tablet {}
+      @include smartmobile {
+        font-size: 0.5rem;
+      }
+      @include mobile {
+        font-size: 0.5rem;
+      }
+      &:first-of-type {
+        text-align: left;
+      }
+    }
+  }
+}
